@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #3f0071;
+}
+.emoji {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(#ffca40, #ffa432);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 8px solid #ffa432;
+}
+.blur-1{
+    width: 40px;
+    height: 40px;
+    background: #ff2a2f;
+    filter: blur(20px);
+    position: absolute;
+    top:100px;
+    left:10px
+}
+.blur-2{
+    width: 40px;
+    height: 40px;
+    background: #ff2a2f;
+    filter: blur(20px);
+    position: absolute;
+    top:100px;
+    right:10px
+}
+.heart-1{
+    width: 40px;
+    height: 40px;
+    background: #ff2a2f;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    transform: rotate(30deg);
+    animation: animate-1 2s infinite;
+}
+@keyframes animate-1{
+    50%{
+        transform: rotate(40deg) scale(1.1, 1.1);
+    }
+}
+.heart-1:before{
+    content:"";
+    width: 40px;
+    height: 40px;
+    background: #ff2a2f;
+    position: absolute;
+    top: -20px;
+    border-radius: 50% 50% 0 0;
+}
+.heart-1:after{
+    content:"";
+    width: 40px;
+    height: 40px;
+    background: #ff2a2f;
+    position: absolute;
+    top: 0px;
+    transform: rotate(-90deg );
+    left:-20px;
+    border-radius: 50% 50% 0 0;
+}
+
+.heart-2{
+    width: 40px;
+    height: 40px;
+    background: #ff2a2f;
+    position: absolute;
+    top: 70px;
+    left: 120px;
+    transform: rotate(60deg);
+    animation: animate-2 2s infinite;
+}
+@keyframes animate-2{
+    50%{
+        transform: rotate(50deg) scale(1.1,1.1);
+    }
+
+}
+.heart-2:before{
+    content:"";
+    width: 40px;
+    height: 40px;
+    background: #ff2a2f;
+    position: absolute;
+    top: -20px;
+    border-radius: 50% 50% 0 0;
+}
+.heart-2:after{
+    content:"";
+    width: 40px;
+    height: 40px;
+    background: #ff2a2f;
+    position: absolute;
+    top: 0px;
+    transform: rotate(-90deg );
+    left:-20px;
+    border-radius: 50% 50% 0 0;
+}
+.mouth {
+    width: 90px;
+    height: 35px;
+    background-color: #8c5322;
+    position: absolute;
+    top: 140px;
+    left: 55px;
+    border-radius: 0px 0px 50px 50px;
+    animation: animate-3 2s infinite;
+}
+@keyframes animate-3{
+    50%{
+        border-radius: 50%;
+        transform: translate(20deg) scale(1.1,1.1);
+    }
+}
